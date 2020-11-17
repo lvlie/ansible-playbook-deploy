@@ -1,0 +1,4 @@
+---
+- name: deployvmware
+  src: https://github.com/lvlie/ansible-role-deployvmware
+  version: master

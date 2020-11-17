@@ -1,0 +1,7 @@
+- name: Deploy system
+  hosts: backup
+  gather_facts: min
+  become: true
+
+  roles:
+    - role: deployvmware
