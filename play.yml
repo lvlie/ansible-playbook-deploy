@@ -1,7 +1,8 @@
 - name: Deploy system
-  hosts: backup
+  hosts: awx
   gather_facts: min
-  become: true
-
+  vars_files:
+    - ~/Projects/home/home.yml
+    - ~/Projects/home/vcenter.yml
   roles:
     - role: deployvmware
